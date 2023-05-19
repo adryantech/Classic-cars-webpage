@@ -1,0 +1,192 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* CSS animation for header H1 */
+@keyframes colorChange {
+    0% { color: black; }
+    25% { color: grey; }
+    50% { color: white; }
+    75% { color: whitesmoke; }
+    100% { color: grey; }
+  }
+  
+  header h1 {
+    animation: colorChange 10s infinite; /* Adjust the duration as needed */
+  }
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    z-index: 999;
+  }
+  
+  header h1 {
+    font-size: 3.5vh;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 1vh 2vh;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 1s ease;
+    font-size: 2vh;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Hero section styles */
+  #hero {
+    background-image: url("cars.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #hero h2 {
+    font-size: 3vh;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 2vh;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* About section styles */
+  #about {
+    display: none;
+    background-color: #f4f4f4;
+    padding: 50px;
+  }
+  
+  #about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 16px;
+  }
+  
+  /* Services section styles */
+  #services {
+    padding: 50px;
+  }
+  
+  #services h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #services ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  #services li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  
+/* Featured Models section styles */
+#featured-models {
+    /*padding: 180px 24px; /* Adjusted top padding to accommodate header */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  
+  .model {
+    width: 48%;
+  }
+  
+  .model-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+  
+  .model-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .model img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .model h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .model p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
